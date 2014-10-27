@@ -1,0 +1,126 @@
+true
+    b@domain.net
+false   -    TRUE
+    disposable.style.email.with+156@example.com
+false
+    a"b(c)d,e:f;g<h>i[j\k]l@example.com
+false
+    hfij#kjdfvkl
+false
+    A@b@c@example.com
+false
+    just"not"right@example.com
+false   -   TRUE
+    disposable.style.email.with+symbol@example.com
+false
+    "very.unusual.@.unusual.com"@example.com
+true
+    niceandsimple@example.com
+false
+    this is not true
+true
+    bob123@alice123.com
+true
+    a.little.lengthy.but.fine@dept.example.com
+false
+    this\ still\"not\\allowed@example.com
+true
+    very.common@example.com
+false
+    asterisk_domain@foo.*
+false
+    Abc.example.com
+true
+    b@d.net
+false
+    this is"not\allowed@example.com
+false
+    <invalid>@foo.com
+true
+    1@d.net
+    
+    
+    false
+    this\ still\"not\\allowed@example.com
+false
+    hfij#kjdfvkl
+false
+    A@b@c@example.com
+true
+    1@d.net
+true
+    niceandsimple@example.com
+true
+    very.common@example.comtrue
+
+false
+    disposable.style.email.with+symbol@example.com
+false
+    <invalid>@foo.com
+true
+    b@d.nettrue
+
+false
+    disposable.style.email.with+156@example.com
+false
+    a"b(c)d,e:f;g<h>i[j\k]l@example.com
+false
+    this is"not\allowed@example.com
+false
+    this is not true
+false
+    just"not"right@example.com
+true
+    b@domain.net
+false
+    Abc.example.com
+true
+    bob123@alice123.com
+false
+    asterisk_domain@foo.*
+false
+    "very.unusual.@.unusual.com"@example.com
+true
+    a.little.lengthy.but.fine@dept.example.com
+    
+    
+true
+    very.common@example.com
+true
+    disposable.style.email.with+symbol@example.com
+false
+    Abc.example.com
+true
+    b@d.net
+false
+    a"b(c)d,e:f;g<h>i[j\k]l@example.com
+false
+    hfij#kjdfvkl
+true
+    bob123@alice123.com
+false
+    this is not true
+false
+    asterisk_domain@foo.*
+true
+    1@d.net
+false
+    "very.unusual.@.unusual.com"@example.com
+true
+    niceandsimple@example.com
+true
+    b@domain.net
+false
+    A@b@c@example.com
+true
+    disposable.style.email.with+156@example.com
+false
+    this is"not\allowed@example.com
+false
+    just"not"right@example.com
+true
+    a.little.lengthy.but.fine@dept.example.com
+false
+    this\ still\"not\\allowed@example.com
+false
+    <invalid>@foo.com

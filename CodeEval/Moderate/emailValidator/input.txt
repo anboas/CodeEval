@@ -1,0 +1,3 @@
+disposable.style.email.with+156@example.com
+disposable.style.email.with+symbol@example.com
+File file = new File("J:\\Adam\\School\\ITS-2591\\Workspace\\CodeEval\\src\\emailValidator\\input.txt");
