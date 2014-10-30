@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.TreeMap;
 
 /*
@@ -30,18 +32,24 @@ public class Main {
 		String line;
 		int lineIndex = 0;
 		int linesToPrint = 0;
-		TreeMap<Integer, String> lines = new TreeMap<Integer, String>(Collections.reverseOrder());
+		TreeMap<Integer, String> lines = new TreeMap<Integer, String>(
+				Collections.reverseOrder());
 
 		while ((line = in.readLine()) != null) {
-			if(lineIndex >= 1){
+			if (lineIndex >= 1) {
 				lines.put(line.length(), line);
 			} else {
 				lineIndex++;
 				linesToPrint = Integer.parseInt(line);
 			}
-			System.out.println(line);
 		}
-		System.out.println(lines.toString());
+
+		Collection<String> c = lines.values();
+		Iterator<String> linesIter = c.iterator();
+
+		for (int i = 0; i < linesToPrint; i++) {
+			System.out.println(linesIter.next());
+		}
 
 		in.close();
 	}
