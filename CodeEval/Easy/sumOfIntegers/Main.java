@@ -12,7 +12,6 @@ public class Main {
 		//File file = new File("E:\\Users\\whspr\\git\\CodeEval\\CodeEval\\Easy\\sumOfIntegers\\input.txt");
 		BufferedReader in = new BufferedReader(new FileReader(file));
 		String line;
-		String[] words;
 		int sumOfIntegers = 0;
 
 		while ((line = in.readLine()) != null) {
