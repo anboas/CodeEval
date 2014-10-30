@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 /*
  *  Write a program which reads a file and prints to stdout
@@ -23,13 +24,24 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// File file = new File(args[0]);
 		File file = new File(
-				"E:\\Users\\whspr\\git\\CodeEval\\CodeEval\\Medium\\longestLines\\input.txt");
+				"E:\\Users\\whspr\\git\\CodeEval\\CodeEval\\Moderate\\longestLines\\input.txt");
 		BufferedReader in = new BufferedReader(new FileReader(file));
 		String line;
+		int lineIndex = 0;
+		int linesToPrint = 0;
+		HashMap<Integer, String> lines = new HashMap<Integer, String>();
+
 
 		while ((line = in.readLine()) != null) {
-
+			if(lineIndex >= 1){
+				lines.put(line.length(), line);
+			} else {
+				lineIndex++;
+				linesToPrint = Integer.parseInt(line);
+			}
+			System.out.println(line);
 		}
+		System.out.println(lines.toString());
 
 		in.close();
 	}
