@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.TreeMap;
 
 /*
  *  Write a program which reads a file and prints to stdout
@@ -29,7 +29,8 @@ public class Main {
 		String line;
 		int lineIndex = 0;
 		int linesToPrint = 0;
-		HashMap<Integer, String> lines = new HashMap<Integer, String>();
+		//Map<Integer, String> lines = new HashMap<Integer, String>();
+		TreeMap<Integer, String> lines = new TreeMap<Integer, String>();
 
 
 		while ((line = in.readLine()) != null) {
